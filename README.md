@@ -1,4 +1,4 @@
-# Movie Recommendation System
+# Movies Recommendation System
 Author: Ruth Nyakio
 
 <img width="1387" alt="image" src="https://github.com/ruth-karimi/Recommendation-System/assets/24277899/5b78dcc5-c8f7-4e63-82b1-22af0f76a7e1">
