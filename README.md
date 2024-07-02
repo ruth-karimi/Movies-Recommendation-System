@@ -1,8 +1,7 @@
 # Movie Recommendation System
 Author: Ruth Nyakio
 
-![image](https://github.com/ruth-karimi/Recommendation-System/assets/24277899/7f89b6bf-0af5-4c1b-9d0e-8f193c5ef6d1)
-
+<img width="1387" alt="image" src="https://github.com/ruth-karimi/Recommendation-System/assets/24277899/5b78dcc5-c8f7-4e63-82b1-22af0f76a7e1">
 
 ## Overview
 RMX consultancy created a user based and item based collaborative filtering methods on movie lens dataset to create a movie recommendation system for Showmax to:
