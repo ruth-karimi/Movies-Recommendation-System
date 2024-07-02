@@ -86,6 +86,12 @@ Average Rating Across Genres Over the Years: Drama, comedy and musical received 
 * The KNNBaseline model provided accurate recommendations with higher predicted ratings and lower RMSE, suggesting it may be more effective in recommending top movies compared to KNNwith Mean and SVD
 
 ## Recommendations
+* Focus on showing common genres such as Drama, comedy and Action and add less Documentary or Film-Noir movies
+* Collect More Data on why the user rated the movie high or low. This will help to enhance user experience
+* Diversify the recommendation: Provide a mix of popular and less well-known movies to keep users engaged
+* Improve Customer Experience: Showmax app improvement for better user experience
+
+## Next Steps
 1. *Implement Hybrid Approach:* The team is recommended to combine both collaborative filtering and content-based filtering to leverage the strengths of each method to improve the accuracy.
 2. *Data Enrichment:* Consider using the links.csv dataset to connect to external datasets such as IMDb or TMDb to enrich the movie metadata with more detailed information that can improve the recommendation systems
 3. *Obtain reviews for movies that do not have a sufficient amount of reviews to be deemed reliable to the dataset or consider removing from model
