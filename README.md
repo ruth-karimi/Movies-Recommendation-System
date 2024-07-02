@@ -30,40 +30,51 @@ Showmax has tasked RMX Consultancy to enhance its competitive edge against compe
 * Timestamps are in seconds since January 1, 1970 (UTC).
 
 2. tags.csv:
-
 * Contains user-generated tags for movies.
 * Format: userId,movieId,tag,timestamp.
 * Tags are single words or short phrases.
 * Timestamps are in seconds since January 1, 1970 (UTC).
 
 3. movies.csv:
-
 * Contains movie information.
 * Format: movieId,title,genres.
 * Titles include release years in parentheses.
 * Genres are pipe-separated from a predefined set of categories.
 
 4. links.csv:
-
 * Contains identifiers to link to other movie databases.
 * Format: movieId,imdbId,tmdbId.
 * movieId corresponds to MovieLens, imdbId to IMDb, and tmdbId to The Movie Databases
    
 ## Results
 
-The KNNBaseline model provided accurate recommendations with higher predicted ratings and lower RMSE, suggesting it may be more effective in recommending top movies compared to KNNwith Mean and SVD
-The KNNBaseline model successfully recommended top 5 movies for users, considering both predicted ratings and similar movie suggestions. 
-The model has high accuracy F1 Score:  0.85 suggesting a  best model performing model.
-The tuned KNNBaseline model is more effective in predicting user preferences compared to the initial model.
-Improved predictive accuracy translates to more relevant and personalized movie recommendations for users.
-Use the KNNBaseline model's recommendations to personalize user experience on Showmax. This can help in engaging users by suggesting movies they are likely to enjoy based on their past ratings.
+Movie Genres Count: Drama was the most common genre with a count of 40,000+ while Film noir being the least common with a count of less than 1,000
+<img width="801" alt="image" src="https://github.com/ruth-karimi/Recommendation-System/assets/24277899/f9115dd3-e216-4bef-b13c-ecdb808a31b0">
+
+Ratings Distribution: Majority of the movies had a rating of between 3.5 and 4.0
+<img width="808" alt="image" src="https://github.com/ruth-karimi/Recommendation-System/assets/24277899/56e7a31b-3942-4613-a65d-e5735b9e70ea">
+
+Tags Frequency: For tags used, Netflix, queue, funny, quirky, atmospheric, surreal and superhero are the most common tags used by the users
+<img width="808" alt="image" src="https://github.com/ruth-karimi/Recommendation-System/assets/24277899/c9290cad-f71d-4b0a-b310-57c7519fdac9">
+
+Average Rating per User: Most users gave the movies ratings of between 3.5 and 4.0
+<img width="801" alt="image" src="https://github.com/ruth-karimi/Recommendation-System/assets/24277899/f2e38c6f-6990-4bf9-911f-83fbeb6910a5">
+
+Average Rating per Movie Year of release: Movies produced after 1980 seems to have generally lower ratings compared to movies produced before 1980
+<img width="808" alt="image" src="https://github.com/ruth-karimi/Recommendation-System/assets/24277899/18095cbe-064c-46ae-8ee9-7d97a0a335db">
+
+Average Rating Across Genres Over the Years: Drama, comedy and musical received higher average ratings in early to mid-20th century. Animation and Fantasy have become popular in recent years. Genres like Documentary, Film-Noir have maintained consistently high ratings over time. 
+<img width="793" alt="image" src="https://github.com/ruth-karimi/Recommendation-System/assets/24277899/97fbb2e9-b1fc-4ab2-8788-8d59260f5761">
+
 
 ## Conclusions
+* The KNNBaseline model successfully recommended top 5 movies for users, considering both predicted ratings and similar movie suggestions. 
 * The item-based collaborative filtering model, while useful, demonstrated lower accuracy compared to the KNNBaseline model done on the user based collaborative filtering.
-Integrating it with other methods or using hybrid approaches could enhance the recommendation system’s performance on Showmax.
+* Integrating it with other methods or using hybrid approaches could enhance the recommendation system’s performance on Showmax.
 * The tuned KNNBaseline model is more effective in predicting user preferences compared to the initial model.
 * Improved predictive accuracy translates to more relevant and personalized movie recommendations for users.
 * Use the KNNBaseline model's recommendations to personalize user experience on Showmax. This can help in engaging users by suggesting movies they are likely to enjoy based on their past ratings.
+* The KNNBaseline model provided accurate recommendations with higher predicted ratings and lower RMSE, suggesting it may be more effective in recommending top movies compared to KNNwith Mean and SVD
 
 ## Recommendations
 1. *Implement Hybrid Approach:* The team is recommended to combine both collaborative filtering and content-based filtering to leverage the strengths of each method to improve the accuracy.
